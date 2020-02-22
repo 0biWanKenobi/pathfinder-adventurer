@@ -1,8 +1,11 @@
 /* eslint-env commonjs */
+const configureAPI = require('./src/server/configure').default
+
 module.exports = {
   devServer: {
     disableHostCheck: true,
-    host: "0.0.0.0"
+    host: "0.0.0.0",
+    before: configureAPI
   },
   css: {
     loaderOptions: {
