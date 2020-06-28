@@ -1,12 +1,15 @@
-import { Router, json } from 'express';
+const { Router, json } = require('express');
 const router = Router();
 
 router.post('/login/:id', (req, res)=> {
-    res.send({
+    console.log('testing server side requests')
+    res.send({       
         id: req.params.id
     })
 })
 
 
 
-export  {router as api, json}
+
+module.exports.api = router;
+module.exports.json = json;

@@ -1,7 +1,9 @@
 
-import { api, json } from '../api.js'
+const {api, json} = require('../api')
 
-export default app => {
+const conf = app => {
   app.use(json())
   app.use('/api', api)
 }
+
+module.exports.configureAPI = conf

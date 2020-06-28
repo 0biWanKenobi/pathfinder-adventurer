@@ -1,5 +1,5 @@
 /* eslint-env commonjs */
-const configureAPI = require('./src/server/configure').default
+const { configureAPI } = require('./src/server/configure')
 
 module.exports = {
   devServer: {

@@ -5,7 +5,11 @@ import {
   NavbarPlugin,
   NavPlugin,
   LayoutPlugin,
-  ButtonPlugin
+  ButtonPlugin,
+  ModalPlugin,
+  FormPlugin,
+  FormInputPlugin,
+  InputGroupPlugin
 } from "bootstrap-vue";
 
 // import "bootstrap/dist/css/bootstrap.css";
@@ -18,6 +22,10 @@ Vue.use(LayoutPlugin);
 Vue.use(NavbarPlugin);
 Vue.use(NavPlugin);
 Vue.use(ButtonPlugin);
+Vue.use(ModalPlugin );
+Vue.use(FormPlugin);
+Vue.use(FormInputPlugin);
+Vue.use(InputGroupPlugin);
 new Vue({
   router,
   render: h => h(App)
